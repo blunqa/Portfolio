@@ -83,27 +83,40 @@ header img {
     height:30em;
     margin: auto;
     text-align: center;
-    color: white;
     background-color: gray;
 }
 .esittely-text{
-    display: inline-block;
+    display: block;
     width: 55%;
     float: left;
     padding: 0 0.5em;
+    text-align: left;
     box-sizing: border-box;
 }
 .esittely-reg{
-    display: inline-block;
+    display: block;
     width: 45%;
     float: left;
+    padding: 0 0.5em;
+    box-sizing: border-box;
     
+}
+.reg-field {
+    border-radius: 10px;
+    border: 0;
+    height: 26px;
+    padding: 5px 10px;
+    display: block;
+    margin: 7px 0;
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
 }
 #reg{
     font-size: 1em;
     padding: 1em;
 }
-
 footer {
    background-color: rgb(255,197,34);
+    text-align: center;
 }
