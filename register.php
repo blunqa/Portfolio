@@ -1,7 +1,13 @@
 <form>
     Etunimi: <input type="text" name="etunimi"><br/>
     Sukunimi: <input type="text" name="sukunimi"><br/>
-    Syntymäaika: <br/>
+    Syntymäaika: <select>
+    <?php
+    for ($i = 1940; $i < 2015; $i++) {
+        echo '<option value="'. $i . '">' . $i . '</option>';
+    }
+    ?>
+    </select><br/> 
     Katuosoite: <input type="text" name="katuosoite"><br/>
     Postinumero ja kaupunki: <input type="text" name="postcity"><br/>
     <hr/>
