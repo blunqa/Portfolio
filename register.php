@@ -1,13 +1,7 @@
 <form>
     Etunimi: <input type="text" name="etunimi"><br/>
     Sukunimi: <input type="text" name="sukunimi"><br/>
-    Syntymäaika: <select>
-        <?php
-        for ($i = 1940; $i < 2015; $i++) {
-            echo '<option value="'. $i . '">' . $i . '</option>';
-        }
-        ?>
-    </select><br/> 
+    Syntymäaika: <?php include('birth.php');?><br/>
     Katuosoite: <input type="text" name="katuosoite"><br/>
     Postinumero ja kaupunki: <input type="text" name="postcity"><br/>
     <hr/>
@@ -19,7 +13,8 @@
             </select><br/>
     
     Koulutus: <input type="text" name="koulutus"><br/>
-    Käyttämäsi ohjelmisto/välineistö: <input type="text" name="equipment">
-
+    Käyttämäsi ohjelmisto/välineistö: <input type="text" name="equipment"><br/>
+	<hr/>
+	<input type='submit' value='Luo profiili' name='profiili'>
 
 </form>
