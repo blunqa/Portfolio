@@ -115,6 +115,9 @@ header img {
 #reg{
     font-size: 1em;
     padding: 1em;
+    border:2px solid green;
+    border-radius:5px;
+    color: linear-gradient(#90f443, #59ce1e);
 }
 footer {
    background-color: rgb(255,197,34);
