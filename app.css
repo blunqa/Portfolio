@@ -84,6 +84,9 @@ header img {
     margin: auto;
     text-align: center;
     background-color: gray;
+    padding-top: 9em;
+    box-sizing: border-box;
+    padding-left:4em;
 }
 .esittely-text{
     display: block;
@@ -107,7 +110,7 @@ header img {
     height: 26px;
     padding: 5px 10px;
     display: block;
-    margin: 7px 0;
+    margin: 7px 44px;
     float: left;
     width: 80%;
     box-sizing: border-box;
