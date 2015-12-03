@@ -113,11 +113,14 @@ header img {
     box-sizing: border-box;
 }
 #reg{
-    font-size: 1em;
-    padding: 1em;
-    border:2px solid green;
-    border-radius:5px;
-    color: linear-gradient(#90f443, #59ce1e);
+    padding:10px;
+    border:3px solid green;
+    border-radius:10px;
+    background: linear-gradient(#90f443, #59ce1e);
+    font-family:'Calibri';
+    font-size:2em;
+    width:80%;
+    
 }
 footer {
    background-color: rgb(255,197,34);
