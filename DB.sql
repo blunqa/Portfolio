@@ -12,7 +12,7 @@ CREATE TABLE KAYTTAJA(
     osoite CHAR(30),
     kaupunki CHAR(30),
     postinumero CHAR(10),
-    maa CHAR(30,),
+    maa CHAR(30),
     sukupuoli CHAR(30),
     koulutus CHAR(100),
     ohj_val CHAR(100),
