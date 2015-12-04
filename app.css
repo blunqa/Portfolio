@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    font-family:"exoregular";
 }
 #sivu {
     width: 65em;
@@ -83,10 +84,18 @@ header img {
     height:30em;
     margin: auto;
     text-align: center;
+    background-image:url("img/harold.jpg");
+    background-size: 65em 30em;
+    background-repeat: no-repeat;
     background-color: gray;
     padding-top: 9em;
     box-sizing: border-box;
-    padding-left:4em;
+}
+.esittely-bg {
+    width: 100%;
+    height: 12em;
+    background: rgba(106, 0, 125, 0.5);
+    
 }
 .esittely-text{
     display: block;
@@ -95,13 +104,16 @@ header img {
     padding: 35px 4.5em;
     text-align: left;
     box-sizing: border-box;
+        color: rgb(240,240,240);
 }
 .esittely-reg{
     display: block;
     width: 45%;
+        margin-top: 6px;
     float: left;
     padding: 0 0.5em;
     box-sizing: border-box;
+    height: 100%;
     
 }
 .reg-field {
@@ -120,7 +132,6 @@ header img {
     border:3px solid green;
     border-radius:10px;
     background: linear-gradient(#90f443, #59ce1e);
-    font-family:'Calibri';
     font-size:2em;
     width:80%;
     
@@ -150,11 +161,12 @@ border:1px solid black;
     background-color: white;
 }
 
+
 .polaroid p {
   position:absolute;
   text-align: center;
   width: 100%;
-  bottom: 0px;
+  bottom: 16px;
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
 }
