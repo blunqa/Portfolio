@@ -1,15 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">	
+  <title>portfoil</title>
+    <link href="font/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="app.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+            <div id="sivu">
+        <header>
+ <a href="index.php"><img src="img/logo.jpg" alt="Logo"></a>
+  <div class="top-block">
+		<nav class="top-nav">
+			<ul>
+				<li>
+					<a href="#" class="selaa">Selaa</a>
+				</li>
+				<li>
+					<a href="#" class="open-modal" id="kirjaudu">Kirjaudu</a>
+				</li>				
+			</ul>
+		</nav>
+		<form class="search-form">
+			<input class="search-field" type="text" name="haku" placeholder="Haku">
+			<button class="search-button" type="submit"><i class="fi-magnifying-glass large"></i></button>
+		</form>
+      </div>
+  </header>
 <h3>Luo projekti</h3>
-<form class="search-form">
-    Projektin nimi: <br><input type="text" name="pr_nimi" required><span>*</span>
-    <br>
-    Kuvaus: <br><textarea rows="4" cols="50" required></textarea><span>*</span>
-    <br>
-    Roolisi projektissa: <br><textarea rows="4" cols="50" required></textarea>
-    <br>
-    Projektin kansikuva: <br><input type="file" name="fileToUpload" id="fileToUpload" required><span>*</span>
-    <br>
+<form class="profiili">
+    Projektin nimi*: <br><input type="text" name="pr_nimi" required>
+    <br><br>
+    Kuvaus*: <br><textarea rows="4" cols="50" maxlength="500" name="pr_kuvaus" required></textarea>
+    <br><br>
+    Roolisi projektissa: <br><textarea rows="1" cols="50" name="pr_rooli" maxlength="200"></textarea>
+    <br><br>
+    Projektin kansikuva*: <br><input type="file" name="fileToUpload" id="fileToUpload" required>
+    <br><br>
     <input type="submit" value="Luo projekti" name="luoprojekti">
-    <br>
+    <br><br>
     <p>* Tähdellä merkityt alueet ovat pakollisia</p>
 </form>
-
+        </div>
+    </body>
+</html>
