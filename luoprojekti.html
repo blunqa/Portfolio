@@ -26,20 +26,23 @@
 		</form>
       </div>
   </header>
+<section class="profiililomake">
 <h3>Luo projekti</h3>
-<form class="profiili">
-    Projektin nimi*: <br><input type="text" name="pr_nimi" required>
+<br>
+<form class="projekti">
+    Projektin nimi*: <br><input class="lomake" type="text" name="pr_nimi" required>
     <br><br>
     Kuvaus*: <br><textarea rows="4" cols="50" maxlength="500" name="pr_kuvaus" required></textarea>
     <br><br>
-    Roolisi projektissa: <br><textarea rows="1" cols="50" name="pr_rooli" maxlength="200"></textarea>
+    Roolisi projektissa: <br><input class="lomake" name="pr_rooli" ></textarea>
     <br><br>
     Projektin kansikuva*: <br><input type="file" name="fileToUpload" id="fileToUpload" required>
     <br><br>
-    <input type="submit" value="Luo projekti" name="luoprojekti">
+    <input class="button_small" type="submit" value="Luo projekti" name="luoprojekti">
     <br><br>
-    <p>* Tähdellä merkityt alueet ovat pakollisia</p>
+    <label>* Tähdellä merkityt alueet ovat pakollisia</label>
 </form>
+</section>
         </div>
     </body>
 </html>
