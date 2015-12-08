@@ -30,9 +30,8 @@ CREATE TABLE PROJEKTI(
     rooli CHAR(100),
     kuvaus CHAR(100),
     kuva CHAR(100),
-    kategoria CHAR(100),
-    omistaja INT,
-    FOREIGN KEY(omistaja) REFERENCES KAYTTAJA(id)
+    kategoria CHAR(100)
+    
 );
 
 CREATE TABLE PROJEKTI_KUVAT (
