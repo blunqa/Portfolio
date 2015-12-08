@@ -17,7 +17,7 @@
 					<a href="selaa.php" class="selaa">Selaa</a>
 				</li>
 				<li>
-					<a href="#" class="open-modal kirjaudu">Kirjaudu</a>
+					<a href="#" class="open-modal" data-target="log-modal">Kirjaudu</a>
 				</li>				
 			</ul>
 		</nav>
