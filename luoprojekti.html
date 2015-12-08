@@ -1,35 +1,6 @@
-<html>
-<head>
-  <meta charset="UTF-8">	
-  <title>portfoil</title>
-    <link href="font/stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="app.css" rel="stylesheet" type="text/css">
-</head>
-    <body>
-            <div id="sivu">
-        <header>
- <a href="index.php"><img src="img/logo.jpg" alt="Logo"></a>
-  <div class="top-block">
-		<nav class="top-nav">
-			<ul>
-				<li>
-					<a href="#" class="selaa">Selaa</a>
-				</li>
-				<li>
-					<a href="#" class="open-modal" id="kirjaudu">Kirjaudu</a>
-				</li>				
-			</ul>
-		</nav>
-		<form class="search-form">
-			<input class="search-field" type="text" name="haku" placeholder="Haku">
-			<button class="search-button" type="submit"><i class="fi-magnifying-glass large"></i></button>
-		</form>
-      </div>
-  </header>
-<section class="profiililomake">
+<?php include("includes/iheader.php"); ?>
 <h3>Luo projekti</h3>
-<br>
-<form class="projekti">
+<form class="profiili">
     Projektin nimi*: <br><input class="lomake" type="text" name="pr_nimi" required>
     <br><br>
     Kuvaus*: <br><textarea rows="4" cols="50" maxlength="500" name="pr_kuvaus" required></textarea>
@@ -38,11 +9,8 @@
     <br><br>
     Projektin kansikuva*: <br><input type="file" name="fileToUpload" id="fileToUpload" required>
     <br><br>
-    <input class="button_small" type="submit" value="Luo projekti" name="luoprojekti">
+    <input type="submit" value="Luo projekti" name="luoprojekti">
     <br><br>
-    <label>* Tähdellä merkityt alueet ovat pakollisia</label>
+    <p>* Tähdellä merkityt alueet ovat pakollisia</p>
 </form>
-</section>
-        </div>
-    </body>
-</html>
+<?php include("includes/ifooter.php"); ?>
