@@ -1,8 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-    font-family:"exoregular";
+  font-family:"exoregular";
+}
+a{
     text-decoration: none;
+    color:rgb( 151, 202, 253);
 }
 body{
     background-color: rgb(150, 150, 150);
@@ -29,10 +32,6 @@ header img {
 		float: right;	
 }
 
-.top-nav ul {
-  	padding: 0 30px;
-}
-
 .top-nav li {
     display: inline;
     float: left;
@@ -56,6 +55,7 @@ header img {
 }
 .kirjaudu {
     width:4em;
+    border-left: 1px solid white;
 
 }
 .search-form{
@@ -131,6 +131,33 @@ header img {
     width: 367px;
     padding: 5px 10px;
 }
+.lomake {
+    border-radius: 10px;
+    border: 0;
+    width: 367px;
+    padding: 5px 10px;
+    margin-bottom:10px;
+}
+
+.profiili select  {
+	border-radius: 10px;
+    margin-bottom:10px;
+		
+	padding:5px 10px;
+}
+.profiililomake {
+	margin-top: 15px;
+}
+
+.button_small {
+	border:2px solid green;
+  border-radius:10px;
+  border:1px solid black;
+  color:rgb(255,255,255);
+  background: linear-gradient(rgb( 51, 102, 153), rgb(0, 51, 102));
+	width:100px;
+	height:30px;
+}
 .reg-field {
 
     height: 26px;
@@ -140,6 +167,9 @@ header img {
     float: left;
     width: 80%;
     box-sizing: border-box;
+}
+#selaa-bg {
+    background-color: bisque;
 }
 #reg{
     padding:10px;
@@ -195,19 +225,24 @@ border:1px solid black;
   font: 400 18px/1 'Kaushan Script', cursive;
   color: #888;
 }
-
-
 .user {
     position: absolute;
     top: 4em;
-    background: rgb(255,197,34);
-    width: 25em;
+    color:rgb(255,255,255);
+    background: rgb(70, 0, 82);
+    width: 16em;
     padding: 2em;
     margin: auto;
-    left: 0;
+    left: 45em;
     right: 0;
     border-radius: 0 0 10px 10px;
 }
+.user .lomake{
+    width:200px;
+    margin: auto;
+    
+}
+
 
 .close-modal {
     float: right;
