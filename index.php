@@ -2,8 +2,8 @@
     <div class="esittely">
         <div class="esittely-bg">
        <div class="esittely-text">
-        <h1>Esittelyy</h1>
-           <p>Portfolio on helppokäyttöinen julkaisupalvelu, johon käyttäjät voivat luoda oman yksityiskohtaisen profiilin sekä ladata omia tuotoksiaan muiden nähtäväksi. </br><b>Rekisteröidy jo tänään!</b></p>
+        <h1>Tervetuloa!</h1>
+           <p>Lumnium on helppokäyttöinen julkaisupalvelu, johon käyttäjät voivat luoda oman yksityiskohtaisen profiilin sekä ladata omia tuotoksiaan muiden nähtäväksi. </br><b>Rekisteröidy jo tänään!</b></p>
         </div><div class="esittely-reg">
         <form class="reg-form">
 			<input class="reg-field lomake" type="text" name="user" placeholder="Username">
