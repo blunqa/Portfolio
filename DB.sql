@@ -30,6 +30,7 @@ CREATE TABLE PROJEKTI(
     rooli CHAR(100),
     kuvaus CHAR(100),
     kuva CHAR(100),
+    pvm date,
     kategoria CHAR(100)
     
 );
