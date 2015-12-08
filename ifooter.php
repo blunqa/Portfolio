@@ -1,6 +1,6 @@
       <footer><p>(C) Kaikki oikeudet pidätetään Lumnium 2015 </p><p>| Usein Kysytyt Kysymykset | Ota yhteyttä | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |</p></footer>
       <!-- kirjautuminen -->
-	<div class="user modal" id="log-modal" style="display: block;">
+	<div class="user modal" id="log-modal" style="display: none;">
 	    <a href="#" class="close-modal">×</a>
 	    <div class="user-login">
 	        Kirjaudu sisaan.
