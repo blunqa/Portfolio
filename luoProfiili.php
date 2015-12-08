@@ -1,3 +1,4 @@
+<?php include("includes/iheader.php"); ?>
 <section class="profiililomake">
   <h3>Luo profiilisi</h3>
 <form class="profiili">
@@ -21,3 +22,4 @@
 
 </form>
 </section>
+<?php include("includes/ifooter.php"); ?>
