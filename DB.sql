@@ -15,7 +15,7 @@ CREATE TABLE KAYTTAJA(
     maa CHAR(30),
     sukupuoli CHAR(30),
     koulutus CHAR(100),
-    ohj_val CHAR(100),
+    ohj_val CHAR(100)
 );
 CREATE TABLE PROF_PROJ (
     kayttaja INT,
