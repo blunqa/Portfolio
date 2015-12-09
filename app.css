@@ -125,6 +125,58 @@ header img {
     height: 100%;
     
 }
+#content {
+    height: 498px;
+    width: 100%
+    background-color: beige;
+}
+#tiedostot {
+    display: inline-block;
+    float: left;
+    width: 75%;
+    height: 498px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    padding: 1em;
+}
+#tiedostot img {
+    width: 200px;
+}
+#info {
+    display: inline-block;
+    float: left;
+    width:25%;
+    height: 498px;
+    background-color: burlywood;
+    box-sizing: border-box;
+    padding: 1em;
+}
+#info .projekti-pvm {
+    color: dimgray;
+    padding: 1em 0;
+    
+}
+#info .projekti-tekija {
+    padding: 1em 0;
+}
+#info .projekti-rooli {
+    padding: 1em 0;
+}
+#info .projekti-share {
+    padding: 1em 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    margin: 0 -1em;
+}
+#info .projekti-kuvaus {
+    padding: 1em 0;
+    padding-bottom: 5em;
+    
+}
+
+
+
 .lomake {
     border-radius: 10px;
     border: 0;
@@ -157,6 +209,7 @@ header img {
   background: linear-gradient(rgb( 51, 102, 153), rgb(0, 51, 102));
 	width:100px;
 	height:30px;
+    cursor:pointer;
 }
 .reg-field {
 
@@ -199,8 +252,8 @@ footer a {
   position: relative;
   width: 220px;
 display:inline-block;
-    margin-left:10px;
-    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:10px;
 border:1px solid black;
       -webkit-box-shadow: 3px 3px 3px #777;
      -moz-box-shadow: 3px 3px 3px #777;
@@ -230,12 +283,12 @@ border:1px solid black;
     top: 4em;
     color:rgb(255,255,255);
     background: rgb(70, 0, 82);
-    width: 16em;
+    width: 14em;
     padding: 2em;
     margin: auto;
-    left: 45em;
+    left: 47em;
     right: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0px 60px;
 }
 .user .lomake{
     width:200px;
@@ -245,5 +298,6 @@ border:1px solid black;
 
 
 .close-modal {
-    float: right;
+   float: right;
+    font-size: 3em;
 }
