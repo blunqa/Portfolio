@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-  font-family:"exoregular";
+    font-family:"exoregular";
 }
 a{
     text-decoration: none;
@@ -24,27 +24,35 @@ header img {
     height: 4em;
 }
 .top-block {
-    padding-top: 0.75em;
 		float: right;
+    height: 4em;
 }
 
 .top-nav {
-		float: right;	
+		float: right;
+    height: 100%;
 }
 
 .top-nav li {
     display: inline;
     float: left;
     text-align: center;
+    height: 4em;
 }
 
 .top-nav a {
     color: rgb(255,255,255);
     display: block;
-    line-height: 40px;
-    padding: 0em 1em;
-    font-size: 1.6em;
-    text-decoration: none;
+    height: 64px;
+    width: 7em;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding: 20px 0;
+
+    
+    
 }
 
 .top-nav a:hover {
@@ -224,6 +232,9 @@ header img {
 #selaa-bg {
     background-color: bisque;
 }
+#portfolio-bg {
+    background-color:cornsilk;
+}
 #reg{
     padding:10px;
     border-radius:10px;
@@ -249,34 +260,38 @@ footer a {
     color:rgb(255,255,255);
 }
 .polaroid {
-  position: relative;
-  width: 220px;
-display:inline-block;
+    height:200px;
+    position: relative;
+    width: 220px;
+    display:inline-block;
     margin-right:10px;
+    vertical-align: top;
     margin-bottom:10px;
-border:1px solid black;
-      -webkit-box-shadow: 3px 3px 3px #777;
+    border:1px solid black;
+     -webkit-box-shadow: 3px 3px 3px #777;
      -moz-box-shadow: 3px 3px 3px #777;
           box-shadow: 3px 3px 3px #777;
     background: linear-gradient(#e3e3e3, white);
 }
 
 .polaroid img {
-  margin:10px;
+    margin:10px;
+    max-height: 150px;
+
     border:1px solid black;
-  margin-bottom: 45px;
+    margin-bottom: 45px;
     width: 200px;
     background-color: white;
 }
 
 
 .polaroid p {
-  position:absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 16px;
-  font: 400 18px/1 'Kaushan Script', cursive;
-  color: #888;
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 16px;
+    font: 400 18px/1 'Kaushan Script', cursive;
+    color: #888;
 }
 .user {
     position: absolute;
@@ -298,6 +313,23 @@ border:1px solid black;
 
 
 .close-modal {
-   float: right;
+    float: right;
     font-size: 3em;
+}
+ul li ul.dropdown{
+    width: 168px; /* Set width of the dropdown */
+    top:4em;
+    border-left: 1px solid white;
+    background: rgb(70, 0, 82);
+    display: none;
+    position: absolute;
+    z-index: 999;
+    float:right;
+    box-sizing: border-box;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+ul li ul.dropdown li{
+    display: block;
 }
