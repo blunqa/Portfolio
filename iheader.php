@@ -17,7 +17,14 @@
 					<a href="selaa.php" class="selaa">Selaa</a>
 				</li>
 				<li>
-					<a href="#" class="open-modal" data-target="log-modal">Kirjaudu</a>
+					<a href="#" class="open-modal kirjaudu" data-target="log-modal">Kirjaudu</a>
+<!--                DROPDOWN MENU
+                    <ul class="dropdown">
+                        <li><a href="#">Oma profiili</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Kirjaudu ulos</a></li>
+                    </ul>
+-->
 				</li>				
 			</ul>
 		</nav>
