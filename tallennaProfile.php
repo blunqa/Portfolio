@@ -5,8 +5,13 @@ SSLon();
 $userdata = unserialize($_SESSION['lomakedata']);  //tekstimuodosta takaisin taulukoksi
 $username = $_SESSION['username'];
 
+$userdata['pvm'] = $userdata['year'] . '-' . $userdata['month'] . '-' . $userdata['day'];
+unset($userdata['year']);
+unset($userdata['month']);
+unset($userdata['day']);
+
 	try {
-			$STH2 = $DBH->prepare("UPDATE KAYTTAJA SET etunimi=:etunimi, sukunimi=:sukunimi, saika=:year-:month-:day, puh=:puh, osoite=:osoite, kaupunki=:kaupunki, postinumero=:postinumero, sukupuoli=:sukupuoli, koulutus=:koulutus, ohj_val=:ohj_val WHERE username = '$username';");
+			$STH2 = $DBH->prepare("UPDATE KAYTTAJA SET etunimi=:etunimi, sukunimi=:sukunimi, saika=:pvm, puh=:puh, osoite=:osoite, kaupunki=:kaupunki, postinumero=:postinumero, sukupuoli=:sukupuoli, koulutus=:koulutus, ohj_val=:ohj_val WHERE username = '$username';");
             
 			if($STH2->execute($userdata)){
 					try { 
@@ -26,7 +31,7 @@ $username = $_SESSION['username'];
                     $_SESSION['sukupuoli'] = $user->sukupuoli;
                     $_SESSION['koulutus'] = $user->koulutus;
                     $_SESSION['ohj_val'] = $user->ohj_val;    
-				    redirect(SITE_ROOT);//Palaa heti idex.php sivulle
+				    redirect(SITE_ROOT . "/selaa.php");//Palaa heti idex.php sivulle
 				} catch(PDOException $e) {
 					echo 'Käyttäjän tietojen hakuerhe';
 					file_put_contents('log/DBErrors.txt', 'tallennaProfiili 3: 
