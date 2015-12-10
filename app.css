@@ -123,12 +123,18 @@ header img {
     box-sizing: border-box;
     color: rgb(240,240,240);
 }
+.signedIn-text{
+    height: 192px;
+    padding-top: 65px;
+    font-size: 2em;
+    color:rgb(255,255,255);
+}
 .esittely-reg{
+    
     display: block;
     width: 45%;
-        margin-top: 6px;
     float: left;
-    padding: 0 0.5em;
+    padding: 6px 0.5em;
     box-sizing: border-box;
     height: 100%;
     
@@ -310,7 +316,9 @@ footer a {
     margin: auto;
     
 }
-
+.portfolio-content{
+    padding: 2em;
+}
 
 .close-modal {
     float: right;
