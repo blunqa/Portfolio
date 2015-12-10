@@ -7,15 +7,11 @@
 	//An array of values with as many elements as there are bound parameters in the 
 	//SQL statement being executed. All values are treated as PDO::PARAM_STR
 	$data = array('username' => $username, 'salasana' => $hashpwd);
-	print_r($data);
+	//print_r($data);
 	try {
 		//print_r($data);
 		//echo "Login 1<br />";
-		$STH = $DBH->prepare("SELECT * FROM KAYTTAJA WHERE username=:username AND
-		salasana=:salasana");
-		//HUOM! SQL-lauseessa on monta muuttuvaa) tietoa. Ne on helppo antaa
-		// assosiatiivisen taulukon avulla (eli indeksit merkkijonoja)
-		//HUOM! Taulukko annetaan nyt execute() metodille
+		$STH = $DBH->prepare("SELECT * FROM KAYTTAJA WHERE username = :username AND salasana = :salasana");
 		$STH->execute($data);
 		$STH->setFetchMode(PDO::FETCH_OBJ);
 		$row = $STH->fetch();
