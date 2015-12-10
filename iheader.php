@@ -7,7 +7,7 @@
 	<link href="app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
+        <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -16,6 +16,7 @@
       js.src = "//connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v2.5";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="sivu">
   <header>
  <a href="index.php"><img src="img/logo.png" alt="Logo"></a>
@@ -44,4 +45,17 @@
 		</nav>
 
       </div>
+    <div style="display:none;">
+		<?php
+		//Mahdollinen kirjautumisvirhe?
+		if(isset($_SESSION['loggausvirhe']) && $_SESSION['loggausvirhe']=='yes'){	
+		   ?>
+		 <script>
+		    confirm("Väärä tunnus tai salasana - yritä uudelleen");
+		 </script>
+		  <?php  
+			 unset($_SESSION['loggausvirhe']);
+        }
+		  ?>
+	</div>
   </header>
