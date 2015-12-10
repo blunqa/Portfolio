@@ -1,4 +1,6 @@
-      <footer><p>(C) Kaikki oikeudet pidätetään Lumnium 2015 </p><p>| Usein Kysytyt Kysymykset | Ota yhteyttä | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |</p></footer>
+      <footer><p>(C) Kaikki oikeudet pidätetään Lumnium 2015 </p><p>| Usein Kysytyt Kysymykset | Ota yhteyttä | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |</p>
+       <br>
+        <?php include("fbShare.php"); ?></footer>
       <!-- kirjautuminen -->
 	<div class="user modal" id="log-modal" style="display: none;">
 	    <a href="#" class="close-modal">×</a>
