@@ -29,3 +29,28 @@
 	}
 }
 ?>
+
+<?php
+/**
+ * SELAA 12 UUSINTA PROJEKTIA!
+ * Hakee annetusta kannasta enintään 12 uusinta projektia. 
+ * @param unknown_type $DBH
+ * @return $projektit taulukko
+ */
+function getNewProjects($DBH){
+	try {
+		//Haetaan 12 uusinta projektia
+		$projektit = array(); //Taulukko projekti-olioille
+	
+		$STH = $DBH->query("SELECT projekti.nimi, projekti.kuva 
+				            FROM projekti
+				            ORDER BY projekti.pvm DESC LIMIT 12");  //DESC,ASC
+		$STH->setFetchMode(PDO::FETCH_OBJ);  //yksi rivi objektina
+		return $projektit;
+	} catch(PDOException $e) {
+        //Kirjoitetaan mahdollinen virheviesti tiedostoon
+		file_put_contents('log/DBErrors.txt', 'selaa.php: '.$e->getMessage()."\n", FILE_APPEND);
+		return false;
+	}
+}
+?>
