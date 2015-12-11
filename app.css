@@ -204,7 +204,13 @@ header img {
     padding: 5px 10px;
     margin-bottom:10px;
 }
-
+.tiedot{
+    background-color: darkkhaki;
+    padding: 2em;
+}
+.tiedot p{
+    padding: 0.5em 0;
+}
 .profiili select  {
 	border-radius: 10px;
     margin-bottom:10px;
@@ -221,7 +227,7 @@ header img {
   border:1px solid black;
   color:rgb(255,255,255);
   background: linear-gradient(rgb( 51, 102, 153), rgb(0, 51, 102));
-	width:100px;
+	padding: 0 1em;
 	height:30px;
     cursor:pointer;
 }
