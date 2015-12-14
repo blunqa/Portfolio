@@ -33,7 +33,7 @@
                             echo $_SESSION['username']; ?></a>
                     <ul class="dropdown">
                         <li><a href="#">Oma profiili</a></li>
-                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="<?php echo SITE_ROOT.'?portfolio='.$_SESSION['username']; ?>">Portfolio</a></li>
                         <li><a href="<?php echo SITE_ROOT;?>/logout.php">Kirjaudu ulos</a></li>
                     </ul>                
                         <?php } else { ?>
