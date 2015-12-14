@@ -1,4 +1,9 @@
-<?php include("includes/iheader.php"); ?>
+<?php 
+include("config.php");
+require_once("functions.php");
+include("includes/iheader.php"); 
+SSLon();
+?>
 <div id="selaa-bg">  
 <h1>Uusimmat projektit</h1>
     <div class="polaroid">
