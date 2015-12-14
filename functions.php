@@ -18,11 +18,6 @@ function redirect($url){
 	}
 }
 
-
-
-
-
-	
 /**
 * Turn on HTTPS - Detect if HTTPS, if not on, then turn on HTTPS:
 */
@@ -40,5 +35,12 @@ function SSLoff() {
 		$url = "http://" . $_SERVER ['HTTP_HOST'] . $_SERVER ['REQUEST_URI'];
 		redirect ( $url );
 	}
+}
+
+function age(){
+    $today = new DateTime();
+    $birthdate = new DateTime($_SESSION['saika']);
+    $interval = $today->diff($birthdate);
+    echo $interval->format('%y vuotta');
 }
 ?>
