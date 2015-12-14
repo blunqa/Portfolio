@@ -8,7 +8,12 @@ a{
     color:rgb( 151, 202, 253);
 }
 body{
-    background-color: rgb(150, 150, 150);
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: black;
 }
 #sivu {
     width: 65em;
@@ -63,7 +68,7 @@ header img {
 }
 .kirjaudu {
     width:4em;
-    border-left: 1px solid white;
+    border-left: 1px solid rgb(245,245,245);;
 
 }
 .search-form{
@@ -141,15 +146,15 @@ header img {
 }
 #content {
     height: 498px;
-    width: 100%
-    background-color: beige;
+    width: 100%;
+    background-color: rgb(245,245,245);;
 }
 #tiedostot {
     display: inline-block;
     float: left;
     width: 75%;
     height: 498px;
-    background-color: aquamarine;
+    background-color: rgb(245,245,245);;
     box-sizing: border-box;
     padding: 1em;
 }
@@ -193,20 +198,21 @@ header img {
 
 .lomake {
     border-radius: 10px;
-    border: 0;
-    width: 367px;
-    padding: 5px 10px;
-}
-.lomake {
-    border-radius: 10px;
-    border: 0;
+    border: 1px solid rgb(200,200,200);
     width: 367px;
     padding: 5px 10px;
     margin-bottom:10px;
 }
 .tiedot{
-    background-color: darkkhaki;
+    background-color: rgb(245,245,245);
     padding: 2em;
+}
+.tieto-container{
+    background-color: rgb(230,230,230);
+    width: 50%;
+    padding: 0.5em 0 0 0.5em;
+    margin-bottom: 5px;
+    border-radius: 0px 10px 10px 0px
 }
 .tiedot p{
     padding: 0.5em 0;
@@ -217,8 +223,13 @@ header img {
 		
 	padding:5px 10px;
 }
+.profiili-bg{
+    background-color: rgb(245,245,245);
+    
+}
 .profiililomake {
-	margin-top: 15px;
+
+    padding: 2em 2em;
 }
 
 .button_small {
@@ -242,10 +253,14 @@ header img {
     box-sizing: border-box;
 }
 #selaa-bg {
-    background-color: bisque;
+    background-color: rgb(245,245,245);
 }
 #portfolio-bg {
-    background-color:cornsilk;
+    background-color:rgb(245,245,245);
+}
+
+#luoProjekti-bg{
+    background-color:rgb(245,245,245);
 }
 #reg{
     padding:10px;
