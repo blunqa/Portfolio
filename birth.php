@@ -1,5 +1,5 @@
-<select name="data[day]" required>
-	<option> - Päivä - </option>
+<select required name="data[day]">
+	<option value=NULL> - Päivä - </option>
 	<?php
         for ($i = 1; $i <= 9; $i++) {
         echo '<option value="'. "0" . $i . '">' . $i . '</option>';
@@ -10,8 +10,8 @@
         ?>
     
 </select>
-<select name="data[month]"  required>
-	<option> - Kuukausi - </option>
+<select required name="data[month]">
+	<option value=NULL> - Kuukausi - </option>
 	<option value="01">Tammikuu</option>
 	<option value="02">Helmikuu</option>
 	<option value="03">Maaliskuu</option>
@@ -27,7 +27,7 @@
 </select>
 
 <select name="data[year]"  required>
-	<option> - Vuosi - </option>
+	<option value=NULL> - Vuosi - </option>
 	<?php
         for ($i = 1940; $i <= 2015; $i++) {
         echo '<option value="'. $i . '">' . $i . '</option>';
