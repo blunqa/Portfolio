@@ -1,7 +1,7 @@
-  <footer><p>(C) Kaikki oikeudet pidätetään Lumnium 2015 </p><p>| Usein Kysytyt Kysymykset | Ota yhteyttä | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |</p></footer>
+  <footer><p>&#169; Lumnium 2015 | Usein Kysytyt Kysymykset | Ota yhteyttä | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |
+<?php include("fbShare.php"); ?></p></footer>
+      
       <!-- kirjautuminen -->
-          <br>
-<?php include("fbShare.php"); ?></footer>
 <?php
 //Jos ei kirjauduttu sisään modaali tulee esiin
 if($_SESSION['logged_in'] != 'yes') {?>
