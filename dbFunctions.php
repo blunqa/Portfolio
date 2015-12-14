@@ -28,6 +28,37 @@
 		file_put_contents('log/DBErrors.txt', 'Login: '.$e->getMessage()."\n", FILE_APPEND);
 	}
 }
+function getUsername($kayttaja, $DBH){
+	try {
+		$STH = $DBH->prepare("SELECT * FROM KAYTTAJA WHERE username = :username");
+		$STH->bindParam(':username', $kayttaja);
+		$STH->execute($data);
+		$STH->setFetchMode(PDO::FETCH_OBJ);
+		$username = $STH->fetch();
+		return($username);
+	} catch(PDOException $e) {
+		file_put_contents('log/DBErrors.txt', 'portfolio.php: '.$e->getMessage()."\n", FILE_APPEND);
+		return false;
+	}
+}
+function getProjects($userID, $DBH){
+	
+	try {
+		$projektit = array();
+		$STH = $DBH->prepare("SELECT PROJEKTI.id, PROJEKTI.nimi, PROJEKTI.kuvaus, PROJEKTI.kategoria, PROJEKTI.pvm  FROM PROJEKTI, PROF_PROJ WHERE PROF_PROJ.projekti = PROJEKTI.id AND PROF_PROJ.kayttaja = :user");
+		$STH->bindParam(':user', $userID);
+		$STH->execute();
+		$STH->setFetchMode(PDO::FETCH_OBJ);
+		while ($projekti = $STH->fetch()){
+			$projektit[] = $projekti;	
+		}
+		return $projektit;
+	} catch(PDOException $e) {
+		file_put_contents('log/DBErrors.txt', 'subcategory.php: '.$e->getMessage()."\n", 
+FILE_APPEND);
+		return false;
+	}
+}
 ?>
 
 <?php
