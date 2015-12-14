@@ -47,7 +47,4 @@
             <img src="img/nainen.jpg"/>
         </div>
         </section>
-        </div>
-    </body>
-</html>
 <?php include("includes/ifooter.php"); ?>
