@@ -1,31 +1,41 @@
 	<div class="tiedot">   
-	<h1>Käyttäjän <?php echo $_SESSION['username']?> tiedot</h1>
+	<h1>Käyttäjän <?php echo $_SESSION['username']?> profiili</h1>
         <br>
-	<h3>Nimi</h3> 
+        <br>
+    <?php // Jos nimi on kerrottu se näytetään
+        if(($_SESSION['etunimi'])!=NULL || $_SESSION['sukunimi'] != NULL){
+        echo '<div class="tieto-container">';?>
+        <h3>Nimi</h3> 
         <p><?php echo $_SESSION['etunimi'].' '.$_SESSION['sukunimi'];?></p>
-            
+            <?php echo '</div>';}?>
     <?php // Jos sukupuoli on kerrottu se näytetään
-        if(($_SESSION['sukupuoli'])!=0){?>
-    <h3>Sukupuoli</h3>
+        if(($_SESSION['sukupuoli']!=0 || $_SESSION['sukupuoli'])!=NULL){
+        echo '<div class="tieto-container">';?>
+            <h3>Sukupuoli</h3>
         <?php 
                 echo '<p>';
                 echo $_SESSION['sukupuoli'];
-                echo '</p>';}?>
+                echo '</p>';
+                echo '</div>';}?>
         
-    <h3>Sähköposti</h3>
-	   <p><?php echo $_SESSION['sposti'];?></p>
-        
+    <div class="tieto-container">
+        <h3>Sähköposti</h3>
+        <p><?php echo $_SESSION['sposti'];?></p>
+    </div>
     <?php // Jos puhelinnumero on kerrottu se näytetään
-        if(($_SESSION['puh'])!=NULL){?>
-            <h3>Puhelinnumero</h3>
+        if(($_SESSION['puh'])!=NULL){
+        echo '<div class="tieto-container">';?>
+                <h3>Puhelinnumero</h3>
                 <?php 
                     echo '<p>';
                     echo $_SESSION['puh'];
-                    echo '</p>';}?>
-
+                    echo '</p>';
+                    echo '</div>';}?>
+            
      <?php // Jos Osoite on kerrottu se näytetään
-        if($_SESSION['osoite'] !=NULL || $_SESSION['postinumero'] != NULL || $_SESSION['kaupunki'] != NULL){?>
-	<h3>Osoite</h3>
+        if($_SESSION['osoite'] !=NULL || $_SESSION['postinumero'] != NULL || $_SESSION['kaupunki'] != NULL){
+        echo '<div class="tieto-container">';?>
+        <h3>Osoite</h3>
         <?php
             echo '<p>';
             if($_SESSION['osoite'] !=NULL) { 
@@ -38,30 +48,40 @@
             echo $_SESSION['kaupunki'];
             };
             echo '</p>';
-        }?>
-    <?php // Jos syntymäpäivä on kerrottu se näytetään    
-        if($_SESSION['saika'] !=NULL){?>
-    <h3>Syntymäpäivä</h3>
+            echo '</div>';}?>
+        
+    <?php // Jos syntymäpäivä on kerrottu se näytetään ikänä    
+        if($_SESSION['saika'] !="0000-00-00"){
+        echo '<div class="tieto-container">';?>
+        <h3>Ikä</h3>
         <?php 
             echo '<p>';
-            echo $_SESSION['saika'];
-            echo '</p>';}?>
-    <?php // Jos koulutus on kerrottu se näytetään
-        if($_SESSION['koulutus'] != NULL){?>
-    <h3>Koulutus</h3>
+            age();
+            echo '</p>';
+            echo '</div>';}?>
+    
+        <?php // Jos koulutus on kerrottu se näytetään
+        if($_SESSION['koulutus'] != NULL){
+        echo '<div class="tieto-container">';?>
+        <h3>Koulutus</h3>
         <?php 
             echo '<p>';
             echo $_SESSION['koulutus'];
-            echo '</p>';}?>
+            echo '</p>';
+            echo '</div>';}?>
+    
     <?php // Jos Käytetty Ohjelmisto/Välineistö on kerrottu se näytetään
-        if($_SESSION['ohj_val'] != NULL){?>
-    <h3>Käytetty Ohjelmisto/Välineistö</h3>
+        if($_SESSION['ohj_val'] != NULL){
+        echo '<div class="tieto-container">';?>
+    
+        <h3>Käytetty Ohjelmisto/Välineistö</h3>
         <?php 
             echo '<p>';
             echo $_SESSION['ohj_val'];
-            echo '</p>';}?>
+            echo '</p>';
+            echo '</div>';}?>
         <form action="luoprofiili.php" class="profiili" method="post">
             <input class="button_small" type='submit' action="luoprofiili.php" value='Muokkaa Profiilia' name='profiili'>
         </form>
-	</div>
+</div>
 
