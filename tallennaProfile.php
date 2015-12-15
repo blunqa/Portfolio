@@ -31,7 +31,7 @@ unset($userdata['day']);
                     $_SESSION['sukupuoli'] = $user->sukupuoli;
                     $_SESSION['koulutus'] = $user->koulutus;
                     $_SESSION['ohj_val'] = $user->ohj_val;    
-				    redirect(SITE_ROOT . "/selaa.php");//Palaa heti idex.php sivulle
+				    redirect(SITE_ROOT);//Palaa heti idex.php sivulle
 				} catch(PDOException $e) {
 					echo 'Käyttäjän tietojen hakuerhe';
 					file_put_contents('log/DBErrors.txt', 'tallennaProfiili 3: 
