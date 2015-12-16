@@ -362,3 +362,7 @@ ul li:hover ul.dropdown{
 ul li ul.dropdown li{
     display: block;
 }
+summary h2 {
+  display: inline;
+  cursor: pointer;
+}
