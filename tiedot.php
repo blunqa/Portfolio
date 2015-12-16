@@ -1,12 +1,19 @@
 <div id="yhteystiedot-bg">
     <div class="tiedot">
+        <br>
         <h1>Lumnium</h1>
         <br>
-        <h3>Vanha maantie 6</h3>
         <br>
+        <h2>Osoite</h2>
+        <h3>Vanha maantie 6</h3>
         <h3>02650 Espoo</h3>
         <br>
+        <br>
+        <h2>Puhelin</h2>
         <h3>020202</h3>
+        <br>
+        <br>
+        <h3>asiakaspalvelu@lumnium.fi</h3>
         
     </div>
     <div class="sijainti">
