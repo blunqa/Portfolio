@@ -1,4 +1,4 @@
-  <footer><p>&#169; Lumnium 2015 | Usein Kysytyt Kysymykset | <a href="yhteystiedot.php">Yhteystiedot</a> | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |
+  <footer><p>&#169; Lumnium 2015 | <a href="ukk.php">Usein Kysytyt Kysymykset</a> | <a href="yhteystiedot.php">Yhteystiedot</a> | <a href="https://en.wikipedia.org/wiki/Steve_Jobs">Jobs</a> |
 <?php include("fbShare.php"); ?></p></footer>
       
       <!-- kirjautuminen -->
