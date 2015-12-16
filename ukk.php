@@ -9,6 +9,7 @@ include('includes/iheader.php');
 <div id="selaa-bg">
     <h1>Usein kysytyt kysymykset (FAQ)</h1>
     <!-- 'details' ja 'summary' toimivat vain selaimilla: Chrome 12.0+, Safari 6.0+ ja Opera 15.0+ -->
+    <!-- Ei kuitenkaan riko muilla selaimilla. Näyttää vain kuin 'details' ja 'summary' -tageja ei olisi. -->
     <details>
         <summary>
             <h2 style="display: inline;">Mikä on Lumnium?</h2>
