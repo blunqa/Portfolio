@@ -8,11 +8,11 @@ include('includes/iheader.php');
 ?>
 <div id="selaa-bg">
     <h1>Usein kysytyt kysymykset (FAQ)</h1>  
-    <h2>Mikä on Luminium?</h2>
+    <h2>Mikä on Lumnium?</h2>
     <p>Lumnium on helppokäyttöinen julkaisupalvelu, johon käyttäjät voivat luoda oman yksityiskohtaisen profiilin sekä ladata omia tuotoksiaan muiden nähtäväksi.</p>
     <br>
-    <h2>Kuka voi käyttää Luminiumia?</h2>
-    <p>Luminiumia voivat käyttää kaikki rekisteröityneet käyttäjät. Rekisteröityä voi <a href="index.php">etusivulta</a>.</p>
+    <h2>Kuka voi käyttää Lumniumia?</h2>
+    <p>Lumniumia voivat käyttää kaikki rekisteröityneet käyttäjät. Rekisteröityä voi <a href="index.php">etusivulta</a>.</p>
     <br>
     <h2>Mikä on projekti?</h2>
     <p>Käyttäjät voivat luoda portfolioonsa useita projekteja. Projektiin voidaan lisätä kuvia, tekijän rooli ja kuvaus.</p>
