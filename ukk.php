@@ -38,5 +38,12 @@ include('includes/iheader.php');
         <p>Kun olet kirjautuneena sisään klikkaa käyttäjätunnustasi oikeasta yläkulmasta ja valitse tiputusvalikosta "Luo projekti".</p>
     </details>
     <br>
+    <details>
+        <summary>
+            <h2>Kuinka poistan projektin?</h2>
+        </summary>
+        <p>Siirry projektisivulle. Painike projektin poistamiseksi löytyy oikeasta alalaidasta.</p>
+    </details>
+    <br>
 </div>
 <?php include('includes/ifooter.php'); ?>
